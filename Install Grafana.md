@@ -28,7 +28,7 @@ Password: admin
 
 ## 4.  Create a Simple Dashboard
 ### Import Dashborad 
-Click on Dashboard --> Import --> Enter Dashboard ID: 1860 --> Select Prometheous Data Source --> Imprt
+Click on Dashboard -> Import -> Enter Dashboard ID: 1860 -> Select Prometheous Data Source -> Imp0rt
 
 ### Example: CPU Usage- Query in Grafana panel
 
