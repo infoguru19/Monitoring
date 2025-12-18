@@ -14,8 +14,10 @@ sudo mv alertmanager-*/alertmanager /usr/local/bin/
 sudo mv alertmanager-*/amtool /usr/local/bin/
 ```
 ### Part 3: Create Directories
+```
 sudo mkdir /etc/alertmanager
 sudo mkdir /var/lib/alertmanager
+```
 ### Part 4: Alertmanager Configuration File
 ```
 vi /etc/alertmanager/alertmanager.yml
