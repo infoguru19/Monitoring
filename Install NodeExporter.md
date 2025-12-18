@@ -1,17 +1,24 @@
 # Node Exporter as a Service
 ## 1️⃣ Create User
+```
 sudo useradd --no-create-home --shell /bin/false node_exporter
+```
 ## 2️⃣ Install Binary
+```
 wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-1.7.0.linux-amd64.tar.gz
 tar xvf node_exporter-*.tar.gz
 sudo mv node_exporter-*/node_exporter /usr/local/bin/
+```
 ## 3️⃣ Set Permissions
+```
 sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 sudo chmod 755 /usr/local/bin/node_exporter
+```
 ## 4️⃣ Create Systemd Service File
-
+```
 vi /etc/systemd/system/node_exporter.service
-
+```
+```
 [Unit]
 Description=Node Exporter
 Wants=network-online.target
@@ -25,9 +32,12 @@ ExecStart=/usr/local/bin/node_exporter
 
 [Install]
 WantedBy=multi-user.target
+```
 ## 5️⃣ Start & Enable
+```
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl start node_exporter
+```
 sudo systemctl enable node_exporter
 ## 6️⃣ Verify
