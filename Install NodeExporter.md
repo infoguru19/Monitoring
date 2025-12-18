@@ -41,3 +41,7 @@ sudo systemctl start node_exporter
 ```
 sudo systemctl enable node_exporter
 ## 6️⃣ Verify
+```
+systemctl status node_exporter
+curl localhost:9100/metrics
+```
