@@ -119,7 +119,7 @@ vi /etc/Prometheus/Prometheus.yml
 ```
 ```
 rule_files:
-  - "/etc/prometheus/*.yml"
+  - "/etc/prometheus/alert.rules.yml"
 ```
 
 ### Part 11: Restart Prometheus:
