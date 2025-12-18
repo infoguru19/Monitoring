@@ -120,4 +120,7 @@ rule_files:
   - "/etc/prometheus/*.yml"
 ```
 
-Restart Prometheus:
+### Part 11: Restart Prometheus:
+```
+sudo systemctl restart prometheus
+```
