@@ -1,6 +1,6 @@
 # Alertmanager Setup (Systemd Service)
 
-## This section shows how to install Alertmanager, configure it, and run it as a systemd service (production-ready).
+## To install Alertmanager, configure it, and run it as a systemd service (production-ready).
 
 ### Part 1: Create Alertmanager User
 ```
