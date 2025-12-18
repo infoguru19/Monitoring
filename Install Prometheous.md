@@ -72,6 +72,8 @@ sudo systemctl daemon-reload
 sudo systemctl start prometheus
 sudo systemctl enable prometheus
 ```
-7️⃣ Verify
+## 7️⃣ Verify
+```
 systemctl status prometheus
 curl localhost:9090
+```
