@@ -17,20 +17,20 @@ http://localhost:3000
 Username: admin
 Password: admin
 
-### 3. Connect Grafana to Prometheus
+## 3. Connect Grafana to Prometheus
 
 - Go to Settings → Data Sources
 - Click Add data source
 - Choose Prometheus
 
-URL: http://localhost:9090
+- URL: http://localhost:9090
+- Click Save & Test
 
-Click Save & Test
+## 4.  Create a Simple Dashboard
+### Import Dashborad 
+Click on Dashboard --> Import --> Enter Dashboard ID: 1860 --> Select Prometheous Data Source --> Imprt
 
-Step 5: Create a Simple Dashboard
-Example: CPU Usage
-
-Query in Grafana panel:
+### Example: CPU Usage- Query in Grafana panel
 
 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 
