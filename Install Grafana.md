@@ -30,7 +30,8 @@ Password: admin
 ### Import Dashborad 
 Click on Dashboard -> Import -> Enter Dashboard ID: 1860 -> Select Prometheous Data Source -> Imp0rt
 
-### Example: CPU Usage- Query in Grafana panel
+### Query in Grafana panel
+Example: CPU Usage- 
 
 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 
